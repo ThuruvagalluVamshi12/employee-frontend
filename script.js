@@ -1,10 +1,10 @@
 const API_URL = "https://amplifier-powdered-saggy.ngrok-free.dev/employees";
-function handleLogin() {
 
+function handleLogin() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    fetch(BASE_URL + "/login", {
+    fetch(API_URL + "/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
