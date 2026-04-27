@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8082/employees";
+const API_URL = "https://amplifier-powdered-saggy.ngrok-free.dev/employees";
 function handleLogin() {
 
     let username = document.getElementById("username").value;
