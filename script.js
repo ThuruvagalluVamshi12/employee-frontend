@@ -1,10 +1,9 @@
-const API_URL = "https://amplifier-powdered-saggy.ngrok-free.dev/employees";
-
+const BASE_URL = "https://employee-backend-6-eox7.onrender.com";
 function handleLogin() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    fetch(API_URL + "/login", {
+    fetch(BASE_URL + "/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -29,7 +28,7 @@ function handleLogin() {
 }
 function loadEmployees() {
 
-    fetch(BASE_URL)
+    fetch(API_URL)
     .then(res => res.json())
     .then(data => {
 
